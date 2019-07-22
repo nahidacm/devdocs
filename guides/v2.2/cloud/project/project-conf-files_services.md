@@ -29,11 +29,11 @@ A Cloud template includes the following [default `services.yaml` file](https://g
 
 ```yaml
 mysql:
-    type: mysql:10.0
+    type: mysql:10.2
     disk: 2048
 
 redis:
-    type: redis:3.0
+    type: redis:5.0
 
 elasticsearch:
     type: elasticsearch:6.5
@@ -56,7 +56,7 @@ For example:
 
 ```yaml
 mysql:
-    type: mysql:10.0
+    type: mysql:10.2
     disk: 2048
 ```
 
@@ -68,10 +68,10 @@ You can have multiple instances of each service type. For example, you could hav
 
 ```yaml
 redis:
-    type: redis:3.0
+    type: redis:5.0
 
 redis2:
-    type: redis:3.0
+    type: redis:5.0
 ```
 
 Be aware, if you rename a service in the `services.yaml` file, the following is **permanently removed**:
